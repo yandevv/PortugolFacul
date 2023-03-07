@@ -1,14 +1,17 @@
 programa
 {
+	inclua biblioteca Texto --> tx
 	
 	funcao inicio()
 	{
-		inteiro num
+		cadeia numero
 
-		escreva("Digite um número: ")
-		leia(num)
+		escreva("Digite um número de 3 dígitos: ")
+		leia(numero)
 
-		escreva("\nO número ", num, " tem como antecessor o número ", num - 1, " e como sucessor o número ", num + 1, ".")
+		escreva("\nValor centena: ", tx.obter_caracter(numero, 0))
+		escreva("\nValor dezena: ", tx.obter_caracter(numero, 1))
+		escreva("\nValor unidade: ", tx.obter_caracter(numero, 2))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -16,7 +19,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 111; 
+ * @POSICAO-CURSOR = 293; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

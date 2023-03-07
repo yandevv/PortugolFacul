@@ -1,18 +1,14 @@
 programa
 {
-
-	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
-		real raio, area
-		
-		escreva("Digite o valor do raio para o cálculo: ")
-		leia(raio)
+		inteiro num
 
-		area = mat.PI * mat.potencia(raio, 2.0)
+		escreva("Digite um número: ")
+		leia(num)
 
-		escreva("A área do círculo contendo um raio de ", raio, " tem um área de ", area, ".")
+		escreva("\nO número ", num, " tem como antecessor o número ", num - 1, " e como sucessor o número ", num + 1, ".")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -20,7 +16,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 200; 
+ * @POSICAO-CURSOR = 111; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
