@@ -4,14 +4,18 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia numero
+		inteiro numero, unidade, dezena, centena
 
-		escreva("Digite um número de 3 dígitos: ")
+		escreva("Escreva o número desejado: ")
 		leia(numero)
 
-		escreva("\nValor centena: ", tx.obter_caracter(numero, 0))
-		escreva("\nValor dezena: ", tx.obter_caracter(numero, 1))
-		escreva("\nValor unidade: ", tx.obter_caracter(numero, 2))
+		unidade = numero % 10
+
+		dezena = (numero % 100) / 10
+
+		centena = numero / 100
+
+		escreva("\nNúmero invertido: ", unidade, dezena, centena)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -19,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 293; 
+ * @POSICAO-CURSOR = 307; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
